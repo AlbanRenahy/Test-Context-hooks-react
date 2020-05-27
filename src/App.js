@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Step1 from "./components/MainApp/step1";
 import Step2 from "./components/MainApp/step2";
 import Result from "./components/MainApp/result";
+import Sidebar from './components/Nav/Sidebar';
+import TopNavbar from './components/Nav/Navbar';
 import PatientContextProvider from "./contexts/PatientContext";
 
+
 function App() {
+
   const [step, setStep] = useState(1);
 
   const onNext = () => {
@@ -36,6 +41,10 @@ function App() {
 
   return (
     <div className="App">
+      <Fragment>
+          <TopNavbar />
+          <Sidebar />
+      </Fragment>
       <PatientContextProvider>{content}</PatientContextProvider>
     </div>
   );
