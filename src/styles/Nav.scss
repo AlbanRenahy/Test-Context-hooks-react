@@ -11,8 +11,7 @@
 .sidebar {
     bottom: 0;
     left: 0;
-    width: 12vw;
-    min-width: 150px;
+    width: 300px;
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -24,22 +23,24 @@
 }
 
 .sidebar_top_border {
+    padding-bottom: 15px;
     border-bottom: rgba(0, 0, 0, 0.486) 2px solid;
 }
 
 .sidebar_top {
     padding-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .sidebar_bottom {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
 }
 
 .sidebar_list {
-    padding: 0.8em 3em;
+    padding: 1.5em 5em;
     border: black 1px solid;
     margin-top: 20px;
     background: rgb(207, 226, 243);
