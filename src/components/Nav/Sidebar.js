@@ -24,22 +24,22 @@ const SidebarComponent = (props) => {
               </li>
               <li className="nav-item">
                 <a className=" sidebar_list active nav-link" href="#">
-                  Lorem Ipsum
+                  LoremIpsum
                 </a>
               </li>
               <li className="nav-item">
                 <a className=" sidebar_list nav-link" href="#">
-                  Lorem Ipsum
+                  LoremIpsum
                 </a>
               </li>
               <li className="nav-item">
                 <a className=" sidebar_list nav-link" href="#">
-                  Lorem Ipsum
+                  LoremIpsum
                 </a>
               </li>
               <li className="nav-item">
                 <a className=" sidebar_list nav-link" href="#">
-                  Lorem Ipsum
+                  LoremIpsum
                 </a>
               </li>
             </ul>
@@ -53,12 +53,12 @@ const SidebarComponent = (props) => {
             </li>
             <li className="nav-item">
               <a className=" sidebar_list nav-link" href="#">
-                Lorem Ipsum
+                LoremIpsum
               </a>
             </li>
             <li className="nav-item">
               <a className=" sidebar_list nav-link" href="#">
-                Lorem Ipsum
+                LoremIpsum
               </a>
             </li>
           </ul>
