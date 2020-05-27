@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/Nav.scss";
 
-const SidebarComponent = (props) => {
+const SidebarComponent = () => {
   return (
     <nav className="navbar p-0 py-4">
       <a className="navbar-brand align-bottom" href="#">

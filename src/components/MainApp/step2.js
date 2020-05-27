@@ -32,34 +32,30 @@ const Step2 = (props) => {
     <div className="step step2">
       <form className="form" onSubmit={onSubmit}>
         <h1>Veuillez sélectionner votre sexe</h1>
-        <div className="input-group">
-        <button className="button_back" id="back" onClick={onBack}>
+        <div className="button-group">
+          <button className="button_back left_group" id="back" onClick={onBack}>
             <BsArrowLeft />
           </button>
-          <div className="field">
-            <button
-              className="input-genre btn btn-primary "
-              id="masculine"
-              type="submit"
-              value="Monsieur"
-              required
-              onClick={onChange}
-            >
-              Monsieur
-            </button>
-          </div>
-          <div className="field">
-            <button
-              className="input-genre btn btn-primary"
-              id="feminine"
-              type="submit"
-              value="Madame"
-              required
-              onClick={onChange}
-            >
-              Madame
-            </button>
-          </div>
+          <button
+            className="input-genre left_group btn btn-primary "
+            id="masculine"
+            type="submit"
+            value="Monsieur"
+            required
+            onClick={onChange}
+          >
+            Monsieur
+          </button>
+          <button
+            className="input-genre right_group btn btn-primary"
+            id="feminine"
+            type="submit"
+            value="Madame"
+            required
+            onClick={onChange}
+          >
+            Madame
+          </button>
         </div>
       </form>
     </div>
