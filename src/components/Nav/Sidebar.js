@@ -9,7 +9,7 @@ const SidebarComponent = (props) => {
       <img className="logo" src={Logo} alt="Logo de l'application"/>
       <div className="sidebar__menu">
         <Nav vertical className="sidebar_top list-unstyled pb-3">
-              <NavLink className="sidebar_list active" href="#">Première viste</NavLink>
+              <NavLink className="sidebar_list active" href="#">Première visite</NavLink>
               <NavLink className="sidebar_list" href="#">Adaptation</NavLink>
               <NavLink className="sidebar_list" href="#">Lorem Ipsum</NavLink>
               <NavLink className="sidebar_list" href="#">Lorem Ipsum</NavLink>

@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Navbar, NavbarBrand } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Step1 from "./components/MainApp/step1";
 import Step2 from "./components/MainApp/step2";
 import Result from "./components/MainApp/result";

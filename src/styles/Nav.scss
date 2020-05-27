@@ -5,6 +5,7 @@
     align-items: center;
     padding: 0.5rem 1rem;
     border-bottom: black 3px solid;
+    text-decoration: none;
 }
 
 .sidebar {
@@ -22,19 +23,6 @@
     border-right: black 3px solid;
 }
 
-.sidebar__toggle {
-    cursor: pointer;
-    color: #f4f5f7;
-}
-
-.sidebar__close {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
 .sidebar__menu {
     padding: 2.5em 0;
     font-size: 1.15em;
@@ -43,22 +31,19 @@
 }
 
 .sidebar_top {
-    padding-bottom: 100px;
+    padding-bottom: 300px;
     border-bottom: black 2px solid;
 }
 
-.sidebar_bottom {
-    padding-top: 40px;
-}
-
 .sidebar_list {
-    padding: 0.8em;
+    padding: 0.8em 3em;
     border: black 1px solid;
     text-decoration: none;
     margin-top: 60px;
     background: rgb(207, 226, 243);
     text-align: center;
-    margin-right: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .active {
@@ -90,7 +75,7 @@
 }
 
 .logo {
-    width: 40%;
-    margin-left: 30%;
+    width: 30%;
+    margin-left: 35%;
     position: fixed;
 }
