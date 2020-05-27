@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import { PatientContext } from "../../contexts/PatientContext";
+import "../../styles/mainApp.scss";
+import { BsArrowRight } from "react-icons/bs";
 
 const Step1 = (props) => {
   const { patient, saveUser } = useContext(PatientContext);
@@ -32,31 +34,35 @@ const Step1 = (props) => {
   //console.log('step1: data ', data)
 
   return (
-    <div className="step step1">
-      <form onSubmit={onSubmit}>
+    <div class="container">
+      <form className="form" onSubmit={onSubmit}>
         <h1>Veuillez entrer votre nom et prénom</h1>
+        <div className="input-group">
+          <div>
+            <input
+              className="input"
+              placeholder="Nom"
+              id="name"
+              value={data.name}
+              required
+              onChange={onChange}
+            />
+          </div>
 
-        <div className="field">
-          <input
-            placeholder="Nom"
-            id="name"
-            value={data.name}
-            required
-            onChange={onChange}
-          />
+          <div className="field">
+            <input
+              className="input"
+              placeholder="Prénom"
+              id="firstname"
+              value={data.firstname}
+              required
+              onChange={onChange}
+            />
+          </div>
         </div>
-
-        <div className="field">
-          <input
-            placeholder="Prénom"
-            id="firstname"
-            value={data.firstname}
-            required
-            onChange={onChange}
-          />
-        </div>
-
-        <button type="submit">suivant</button>
+        <button className="button_next" type="submit">
+          <BsArrowRight />
+        </button>
       </form>
     </div>
   );

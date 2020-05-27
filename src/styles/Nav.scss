@@ -1,23 +1,25 @@
 .nav-bar {
-    background-color: rgb(0, 170, 217);
+    background-color: transparent;
     height: 100px;
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
+    border-bottom: black 3px solid;
 }
 
 .sidebar {
     bottom: 0;
     left: 0;
-    width: 250px;
+    width: 15vw;
+    min-width: 150px;
     position: fixed;
-    overflow: auto;
+    overflow: hidden;
     top: 0;
-    z-index: 999;
     transform: translate3d(0, 0, 0);
     transition: all 0.5s ease 0s;
     visibility: visible;
-    background: rgb(0, 170, 217);
+    background: transparent;
+    border-right: black 3px solid;
 }
 
 .sidebar__toggle {
@@ -34,7 +36,7 @@
 }
 
 .sidebar__menu {
-    padding: 2.5em 1.5em 0;
+    padding: 2.5em 0;
     font-size: 1.15em;
     text-decoration: none;
     margin-top: 50px;
@@ -42,20 +44,25 @@
 
 .sidebar_top {
     padding-bottom: 100px;
-    border-bottom: #f4f5f7 1px solid;
+    border-bottom: black 2px solid;
 }
 
 .sidebar_bottom {
     padding-top: 40px;
 }
 
-.sidebar li {
+.sidebar_list {
     padding: 0.8em;
-    border: #f4f5f7 1px solid;
+    border: black 1px solid;
     text-decoration: none;
     margin-top: 60px;
-    background: #f4f5f7;
-    border-radius: 5px;
+    background: rgb(207, 226, 243);
+    text-align: center;
+    margin-right: 20%;
+}
+
+.active {
+    background-color: rgb(255, 153, 0);
 }
 
 .sidebar a {
@@ -69,16 +76,11 @@
     text-decoration: none;
 }
 
-.sidebar-visible.sidebar {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-}
-
 .topnav_title {
     padding: 20px;
     border: #f4f5f7 1px solid;
     text-decoration: none;
-    background: #f4f5f7;
+    background: rgb(207, 226, 243);
     border-radius: 5px;
     display: block;
     margin-left: 85%;
@@ -88,7 +90,7 @@
 }
 
 .logo {
-    width: 30%;
-    margin-left: 40%;
+    width: 40%;
+    margin-left: 30%;
     position: fixed;
 }

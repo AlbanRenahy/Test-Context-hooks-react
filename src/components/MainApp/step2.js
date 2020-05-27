@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import { PatientContext } from "../../contexts/PatientContext";
+import "../../styles/mainApp.scss";
+import { BsArrowLeft } from "react-icons/bs";
 
 const Step2 = (props) => {
   const { patient, saveGenres } = useContext(PatientContext);
@@ -28,33 +30,37 @@ const Step2 = (props) => {
 
   return (
     <div className="step step2">
-      <form onSubmit={onSubmit}>
+      <form className="form" onSubmit={onSubmit}>
         <h1>Veuillez sélectionner votre sexe</h1>
-        <div className="field">
-          <button
-            id="masculine"
-            type="submit"
-            value="Monsieur"
-            required
-            onClick={onChange}
-          >
-            Monsieur
+        <div className="input-group">
+          <button className="button_back" id="back" onClick={onBack}>
+            <BsArrowLeft />
           </button>
+          <div className="field">
+            <button
+              className="input-genre"
+              id="masculine"
+              type="submit"
+              value="Monsieur"
+              required
+              onClick={onChange}
+            >
+              Monsieur
+            </button>
+          </div>
+          <div className="field">
+            <button
+              className="input-genre"
+              id="feminine"
+              type="submit"
+              value="Madame"
+              required
+              onClick={onChange}
+            >
+              Madame
+            </button>
+          </div>
         </div>
-        <div className="field">
-          <button
-            id="feminine"
-            type="submit"
-            value="Madame"
-            required
-            onClick={onChange}
-          >
-            Madame
-          </button>
-        </div>
-        <button id="back" onClick={onBack}>
-          back
-        </button>
       </form>
     </div>
   );
