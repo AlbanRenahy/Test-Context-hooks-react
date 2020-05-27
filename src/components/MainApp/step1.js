@@ -13,7 +13,7 @@ const Step1 = (props) => {
     const id = e.target.id;
     const val = e.target.value;
 
-    console.log("onChange: ", val);
+    // console.log("onChange: ", val);
 
     data[id] = val;
     setData({ ...data });
@@ -21,7 +21,7 @@ const Step1 = (props) => {
 
   const onNext = () => {
     //setData({...data})
-    console.log(data);
+    // console.log(data);
     saveUser(data);
     props.onNext();
   };

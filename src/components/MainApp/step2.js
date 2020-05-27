@@ -11,7 +11,7 @@ const Step2 = (props) => {
     const id = e.target.id;
     const val = e.target.value;
 
-    console.log("onChange: ", val);
+    // console.log("onChange: ", val);
 
     data[id] = val;
     setData({ ...data });
@@ -33,7 +33,7 @@ const Step2 = (props) => {
       <form className="form" onSubmit={onSubmit}>
         <h1>Veuillez sélectionner votre sexe</h1>
         <div className="input-group">
-          <button className="button_back" id="back" onClick={onBack}>
+        <button className="button_back" id="back" onClick={onBack}>
             <BsArrowLeft />
           </button>
           <div className="field">

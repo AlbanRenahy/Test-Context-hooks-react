@@ -16,17 +16,17 @@ const PatientContextProvider = (props) => {
   });
 
   const saveUser = (user) => {
-    console.log("saveUser: ", user);
+    // console.log("saveUser: ", user);
     setPatient({ ...patient, user });
   };
 
   const saveGenres = (genres) => {
-    console.log("saveGenres: ", genres);
+    // console.log("saveGenres: ", genres);
     setPatient({ ...patient, genres });
   };
 
   const submit = () => {
-    console.log("submit");
+    // console.log("submit");
   };
 
   return (
