@@ -1,23 +1,67 @@
 import React from "react";
-import { NavLink, Nav } from "reactstrap";
-import Logo from '../../assets/audio_wizard_logo.png';
+import Logo from "../../assets/audio_wizard_logo.png";
 import "../../styles/Nav.scss";
 
 const SidebarComponent = (props) => {
   return (
     <div className={`sidebar ${props.isOpen ? "sidebar-visible" : ""}`}>
-      <img className="logo" src={Logo} alt="Logo de l'application"/>
+      <img className="logo" src={Logo} alt="Logo de l'application" />
       <div className="sidebar__menu">
-        <Nav vertical className="sidebar_top list-unstyled pb-3">
-              <NavLink className="sidebar_list active" href="#">Première visite</NavLink>
-              <NavLink className="sidebar_list" href="#">Adaptation</NavLink>
-              <NavLink className="sidebar_list" href="#">Lorem Ipsum</NavLink>
-              <NavLink className="sidebar_list" href="#">Lorem Ipsum</NavLink>
-        </Nav>
-        <Nav vertical className="sidebar_bottom list-unstyled pb-3">
-              <NavLink className="sidebar_list" href="#">LoremIpsum</NavLink>
-              <NavLink className="sidebar_list" href="#">Lorem Ipsum</NavLink>
-        </Nav>
+        <nav className="navbar p-0 py-4">
+          <a className="navbar-brand align-bottom" href="#">
+            <img
+              src="assets/navbar_brand.svg"
+              className="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+
+          <ul className="sidebar_top nav justify-content-end">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <img src="assets/notification_icon.svg" alt="" />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className=" sidebar_list active nav-link" href="#">
+                Lorem Ipsum
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className=" sidebar_list nav-link" href="#">
+                Lorem Ipsum
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className=" sidebar_list nav-link" href="#">
+                Lorem Ipsum
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className=" sidebar_list nav-link" href="#">
+                Lorem Ipsum
+              </a>
+            </li>
+          </ul>
+
+          <ul className="sidebar_bottom nav justify-content-end">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <img src="assets/notification_icon.svg" alt="" />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className=" sidebar_list nav-link" href="#">
+                Lorem Ipsum
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className=" sidebar_list nav-link" href="#">
+                Lorem Ipsum
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   );

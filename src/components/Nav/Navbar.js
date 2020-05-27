@@ -1,16 +1,30 @@
 import React from "react";
-import { Navbar, NavbarBrand } from 'reactstrap';
-import '../../styles/Nav.scss';
-
+import "../../styles/Nav.scss";
 
 const SidebarComponent = (props) => {
   return (
-    <Navbar className="nav-bar navbar navbar-expand-sm mb-3 py-0">
-      <NavbarBrand href="#" />
-      <a href="#" className="topnav_title">
-        Mon compte ⬇
+    <nav className="navbar p-0 py-4">
+      <a className="navbar-brand align-bottom" href="#">
+        <img
+          src="assets/navbar_brand.svg"
+          className="d-inline-block align-top"
+          alt=""
+        />
       </a>
-    </Navbar>
+
+      <ul className="nav justify-content-end">
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            <img src="assets/notification_icon.svg" alt="" />
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className=" topnav_title nav-link" href="#">
+            Mon compte ⬇
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

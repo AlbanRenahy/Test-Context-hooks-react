@@ -40,7 +40,7 @@ const Step1 = (props) => {
         <div className="input-group">
           <div>
             <input
-              className="input"
+              className="form-control form-control-sm input"
               placeholder="Nom"
               id="name"
               value={data.name}
@@ -51,7 +51,7 @@ const Step1 = (props) => {
 
           <div className="field">
             <input
-              className="input"
+              className="form-control form-control-sm input"
               placeholder="Prénom"
               id="firstname"
               value={data.firstname}
@@ -60,7 +60,7 @@ const Step1 = (props) => {
             />
           </div>
         </div>
-        <button className="button_next" type="submit">
+        <button className="button_next btn" type="submit">
           <BsArrowRight />
         </button>
       </form>

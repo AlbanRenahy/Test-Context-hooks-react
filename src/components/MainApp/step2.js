@@ -38,7 +38,7 @@ const Step2 = (props) => {
           </button>
           <div className="field">
             <button
-              className="input-genre"
+              className="input-genre btn btn-primary "
               id="masculine"
               type="submit"
               value="Monsieur"
@@ -50,7 +50,7 @@ const Step2 = (props) => {
           </div>
           <div className="field">
             <button
-              className="input-genre"
+              className="input-genre btn btn-primary"
               id="feminine"
               type="submit"
               value="Madame"
