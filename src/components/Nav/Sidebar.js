@@ -15,34 +15,35 @@ const SidebarComponent = (props) => {
               alt=""
             />
           </a>
-
-          <ul className="sidebar_top nav justify-content-end">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                <img src="assets/notification_icon.svg" alt="" />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className=" sidebar_list active nav-link" href="#">
-                Lorem Ipsum
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className=" sidebar_list nav-link" href="#">
-                Lorem Ipsum
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className=" sidebar_list nav-link" href="#">
-                Lorem Ipsum
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className=" sidebar_list nav-link" href="#">
-                Lorem Ipsum
-              </a>
-            </li>
-          </ul>
+          <div className="sidebar_top_border">
+            <ul className="sidebar_top nav justify-content-end">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <img src="assets/notification_icon.svg" alt="" />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className=" sidebar_list active nav-link" href="#">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className=" sidebar_list nav-link" href="#">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className=" sidebar_list nav-link" href="#">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className=" sidebar_list nav-link" href="#">
+                  Lorem Ipsum
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <ul className="sidebar_bottom nav justify-content-end">
             <li className="nav-item">

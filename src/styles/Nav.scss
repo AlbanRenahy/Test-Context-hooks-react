@@ -23,19 +23,29 @@
     border-right: black 3px solid;
 }
 
-.sidebar_top {
-    padding-bottom: 60px;
+.sidebar_top_border {
     border-bottom: rgba(0, 0, 0, 0.486) 2px solid;
+}
+
+.sidebar_top {
+    padding-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.sidebar_bottom {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .sidebar_list {
     padding: 0.8em 3em;
     border: black 1px solid;
-    text-decoration: none;
-    margin-top: 60px;
+    margin-top: 40px;
     background: rgb(207, 226, 243);
     text-align: center;
-    margin-right: 20%;
 }
 
 .active {
